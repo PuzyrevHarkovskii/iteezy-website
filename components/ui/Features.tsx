@@ -34,7 +34,7 @@ export const TextParallaxContentExample = () => {
 
 const IMG_PADDING = 12;
 
-const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
+const TextParallaxContent = ({ imgUrl, subheading, heading, children }: { imgUrl: any, subheading: string, heading: string, children: React.ReactNode }) => {
   return (
     <div
       style={{
@@ -51,7 +51,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
   );
 };
 
-const StickyImage = ({ imgUrl }) => {
+const StickyImage = ({ imgUrl }: { imgUrl: any }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -84,7 +84,7 @@ const StickyImage = ({ imgUrl }) => {
   );
 };
 
-const OverlayCopy = ({ subheading, heading }) => {
+const OverlayCopy = ({ subheading, heading }: {subheading: string, heading: string}) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,

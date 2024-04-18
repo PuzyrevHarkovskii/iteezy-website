@@ -28,7 +28,7 @@ export default function Questions() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="md">What is Chakra UI?</Text>
+              <Text fontSize="xl">What is Chakra UI?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
@@ -44,7 +44,7 @@ export default function Questions() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="md">What advantages to use?</Text>
+              <Text fontSize="xl">What advantages to use?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
@@ -61,7 +61,7 @@ export default function Questions() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="md">How to start using Chakra UI?</Text>
+              <Text fontSize="xl">How to start using Chakra UI?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>

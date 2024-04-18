@@ -9,19 +9,20 @@ import { InfiniteMovingCardsDemo } from "@/components/reviews";
 import { TextParallaxContentExample } from "@/components/ui/Features";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { ChakraProvider } from "@chakra-ui/react";
+import { motion, useScroll } from "framer-motion";
+
 
 export default function Home() {
 
   
   return (
-
+    
     
     <>
     
-    <NavbarDemo/>
-    
+
     <TextParallaxContentExample/>
-    <InfiniteMovingCardsDemo/>
+    
     <StickyScrollRevealDemo/>
     <ChakraProvider>
     <Questions/>
