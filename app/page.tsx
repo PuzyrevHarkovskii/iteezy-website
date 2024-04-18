@@ -1,15 +1,10 @@
 
 import Questions from "@/components/chakra-ui/FAQ";
 import Footer from "@/components/chakra-ui/footer";
-import { HeroParallaxDemo } from "@/components/hero";
-import { SparklesPreview } from "@/components/name";
-import { NavbarDemo } from "@/components/nav";
 import { StickyScrollRevealDemo } from "@/components/ourProgramms";
-import { InfiniteMovingCardsDemo } from "@/components/reviews";
 import { TextParallaxContentExample } from "@/components/ui/Features";
-import { SparklesCore } from "@/components/ui/sparkles";
 import { ChakraProvider } from "@chakra-ui/react";
-import { motion, useScroll } from "framer-motion";
+
 
 
 export default function Home() {
