@@ -37,8 +37,8 @@ const combinedConfig = {
 };
 
 module.exports = combinedConfig;
-
-function addVariablesForColors({ addBase, theme }) {
+type AddBaseFunction = (styles: Record<string, string>) => void;
+function addVariablesForColors({ addBase, theme }: { addBase: Function, theme: any }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
