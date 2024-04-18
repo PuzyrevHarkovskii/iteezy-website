@@ -1,11 +1,16 @@
-import { FloatingNav } from "@/components/ui/floating-nav";
+
+import { HeroParallaxDemo } from "@/components/hero";
+import { NavbarDemo } from "@/components/nav";
+import { InfiniteMovingCardsDemo } from "@/components/reviews";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 import Image from "next/image";
-import { FloatingNavDemo } from "./nav";
 
 export default function Home() {
   return (
-    <div className="">
-    <FloatingNavDemo/>
-    </div>
+    <>
+    <NavbarDemo/>
+    <HeroParallaxDemo/>
+    
+    </>
   );
 }
