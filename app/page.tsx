@@ -1,10 +1,13 @@
 
+import Example from "@/components/Carousel";
 import Contact from "@/components/chakra-ui/ContactUs";
 import Questions from "@/components/chakra-ui/FAQ";
 import GridBlurredBackdrop from "@/components/chakra-ui/Testimonials";
 import Footer from "@/components/chakra-ui/footer";
 import ShuffleHero from "@/components/herosection";
+import { NavbarDemo } from "@/components/nav";
 import { StickyScrollRevealDemo } from "@/components/ourProgramms";
+import { HeroScrollDemo } from "@/components/start";
 import { TextParallaxContentExample } from "@/components/ui/Features";
 import { ChakraProvider } from "@chakra-ui/react";
 
@@ -17,11 +20,12 @@ export default function Home() {
     
     
     <>
-    
+    <NavbarDemo/>
     <ShuffleHero/>
     <TextParallaxContentExample/>
     
     <StickyScrollRevealDemo/>
+    <Example/>
     <ChakraProvider>
     <GridBlurredBackdrop/>
     <Questions/>
