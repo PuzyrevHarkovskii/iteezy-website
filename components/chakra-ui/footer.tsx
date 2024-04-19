@@ -16,20 +16,9 @@ export default function Footer() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Stack direction={'row'} spacing={6}>
-          <Box as="a" href={'#'}>
-            Home
-          </Box>
-          <Box as="a" href={'#'}>
-            About
-          </Box>
-          <Box as="a" href={'#'}>
-            Blog
-          </Box>
-          <Box as="a" href={'#'}>
-            Contact
-          </Box>
+          
         </Stack>
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
+        <Text>© 2024 Iteezy. Санкт-Петербург</Text>
       </Container>
     </Box>
   )

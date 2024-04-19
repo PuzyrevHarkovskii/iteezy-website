@@ -109,6 +109,9 @@ const squareData = [
 ];
 
 const generateSquares = () => {
+  const squareSrcArray = squareData.map((sq) => sq.src);
+  const shuffledSquareSrcArray = shuffle(squareSrcArray);
+
   return shuffle(squareData).map((sq) => (
     <motion.div
       key={sq.id}

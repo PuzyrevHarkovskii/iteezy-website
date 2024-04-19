@@ -52,14 +52,14 @@ const backgrounds = [
 
 interface TestimonialCardProps {
   name: string
-  role: string
+  
   content: string
   avatar: string
   index: number
 }
 
 function TestimonialCard(props: TestimonialCardProps) {
-  const { name, role, content, avatar, index } = props
+  const { name, content, avatar, index } = props
   return (
     <Flex
       boxShadow={'lg'}
@@ -104,7 +104,7 @@ function TestimonialCard(props: TestimonialCardProps) {
           {name}
           <chakra.span  fontWeight={'medium'} color={'gray.500'}>
             {' '}
-            - {role}
+            - 
           </chakra.span>
         </chakra.p>
       </Flex>
