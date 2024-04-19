@@ -20,7 +20,7 @@ export default function Questions() {
       align={'center'}
       justify={'center'}
       bg={useColorModeValue('gray.50', 'gray.800')}>
-      <Container>
+      <Container padding="10">
         <Accordion allowMultiple width="100%" maxW="lg" rounded="lg">
           <AccordionItem>
             <AccordionButton
@@ -28,13 +28,13 @@ export default function Questions() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="2xl">Как проходят очные занятия?</Text>
+              <Text fontSize="2xl" alignItems="center">Как часто проходят классные занятия?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                Chakra UI is a simple and modular component library that gives developers
-                the building blocks they need to create web applications.
+              <Text fontSize="xl" color="gray.600">
+Занятие проходит 1 раз в неделю и длится 90 минут. Времени хватает на изучение теории и воплощение её в своих проектах на компьютере. Обучение состоит из 80 % практики и 20 % теории.
+
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -48,10 +48,8 @@ export default function Questions() {
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                Chakra UI offers a variety of advantages including ease of use,
-                accessibility, and customization options. It also provides a comprehensive
-                set of UI components and is fully compatible with React.
+              <Text fontSize="xl" color="gray.600">
+              Занятие проходят в группах до 8 человек. Мы не делаем больших групп, чтобы уделить время каждому.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -65,11 +63,23 @@ export default function Questions() {
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
-              <Text color="gray.600">
-                To get started with Chakra UI, you can install it via npm or yarn, and
-                then import the components you need in your project. The Chakra UI
-                documentation is also a great resource for getting started and learning
-                more about the library.
+              <Text fontSize="xl" color="gray.600">
+              Да, в большинстве модулей предусмотрены домашние задания и контрольные работы. Это позволяет контролировать учебный процесс и усвоение пройденного материала.
+              </Text>
+            </AccordionPanel>
+          </AccordionItem>
+          <AccordionItem>
+            <AccordionButton
+              display="flex"
+              alignItems="center"
+              justifyContent="space-between"
+              p={4}>
+              <Text fontSize="2xl">Если ребенок пропустил занятие, как догнать пропущенный материал?</Text>
+              <ChevronDownIcon fontSize="24px" />
+            </AccordionButton>
+            <AccordionPanel pb={4}>
+              <Text fontSize="xl" color="gray.600">
+              К пропускам ребят каждый раз подходим индивидуально: в некоторых случаях достаточно решить дополнительное домашнее задание или самостоятельную работу, а в некоторых назначаем дополнительную отработку с преподавателем. Также, мы можем предложить подключиться по скайпу к занятию в группе.
               </Text>
             </AccordionPanel>
           </AccordionItem>
