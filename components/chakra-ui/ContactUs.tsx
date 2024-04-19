@@ -30,7 +30,7 @@ import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs'
 
 export default function Contact() {
   return (
-    <Container bg="#9DC4FB" maxW="full" mt={0} centerContent overflow="hidden">
+    <Container bg='white' maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>
         <Box
           bg="#02054B"
@@ -42,9 +42,9 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Contact</Heading>
+                  <Heading>Оставить заявку</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Fill up the form below to contact
+                    Заполните данные чтобы связаться с нами!
                   </Text>
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
@@ -56,18 +56,9 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdPhone color="#1970F1" size="20px" />}>
-                        +91-988888888
+                        +7 (911) 403-00-90
                       </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="200px"
-                        variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}>
-                        hello@abc.com
-                      </Button>
+                      
                       <Button
                         size="md"
                         height="48px"
@@ -76,7 +67,7 @@ export default function Contact() {
                         color="#DCE2FF"
                         _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdLocationOn color="#1970F1" size="20px" />}>
-                        Karnavati, India
+                        Санкт-Петербург, Россия
                       </Button>
                     </VStack>
                   </Box>
@@ -116,8 +107,9 @@ export default function Contact() {
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
+
                       <FormControl id="name">
-                        <FormLabel>Your Name</FormLabel>
+                        <FormLabel>Ваше имя</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
                             <BsPerson color="gray.800" />
@@ -125,8 +117,19 @@ export default function Contact() {
                           <Input type="text" size="md" />
                         </InputGroup>
                       </FormControl>
+
                       <FormControl id="name">
-                        <FormLabel>Mail</FormLabel>
+                        <FormLabel>Имя вашего ребенка</FormLabel>
+                        <InputGroup borderColor="#E0E1E7">
+                          <InputLeftElement pointerEvents="none">
+                            <BsPerson color="gray.800" />
+                          </InputLeftElement>
+                          <Input type="text" size="md" />
+                        </InputGroup>
+                      </FormControl>
+
+                      <FormControl id="name">
+                        <FormLabel>Телефон </FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement pointerEvents="none">
                             <MdOutlineEmail color="gray.800" />
@@ -134,19 +137,10 @@ export default function Contact() {
                           <Input type="text" size="md" />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Message</FormLabel>
-                        <Textarea
-                          borderColor="gray.300"
-                          _hover={{
-                            borderRadius: 'gray.300',
-                          }}
-                          placeholder="message"
-                        />
-                      </FormControl>
+                      
                       <FormControl id="name" float="right">
                         <Button variant="solid" bg="#0D74FF" color="white" _hover={{}}>
-                          Send Message
+                          Отправить заявку
                         </Button>
                       </FormControl>
                     </VStack>
