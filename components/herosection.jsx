@@ -24,7 +24,7 @@ const ShuffleHero = () => {
   );
 };
 
-const shuffle = (array: string[]) => {
+const shuffle = (array) => {
   let currentIndex = array.length,
     randomIndex;
 
@@ -135,7 +135,7 @@ const ShuffleGrid = () => {
 
     return () => clearTimeout(timeoutRef.current);
   }, []);
-
+  
   const shuffleSquares = () => {
     setSquares(generateSquares());
 
